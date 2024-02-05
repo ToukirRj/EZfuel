@@ -30,7 +30,6 @@
 	font-weight: normal;
 	color: #777;
 	font-style: normal;
-     line-height: 26px;
 }
 .pr-60{
     padding-right: 60px;
@@ -289,7 +288,10 @@ label {
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
 }
-
+.start-btn{
+    background: #fff !important;
+    color: #18232b !important;
+}
 .btn i{
     margin-left: 10px;
     font-size: 18px;
@@ -335,7 +337,7 @@ margin-left: 0px;
 	width: 45px;
 	right: 50px;
 	bottom: 77px;
-	color: #fff;
+	color: #18232b;
 	font-size: 20px;
 	text-align: center;
 	border-radius: 50%;
@@ -344,7 +346,7 @@ margin-left: 0px;
 	transition: .3s;
 }
 #scrollUp:hover {
-	background: #f9d758;
+	background: transparent linear-gradient(90deg, #d5b541 0%, #e8c647 100%) 0% 0% no-repeat padding-box;
 }
 /* 2. header */
 
@@ -1149,7 +1151,7 @@ font-size: 16px;
  text-align: left;
 }
 .call-box .icon img{
-    width: 40px;
+    width: 32px;
 }
 .call-box li {
    float: left;
@@ -1161,6 +1163,7 @@ margin-left: 10px;
 }
 .call-box span {
     display: block;
+    line-height: initial;
 }
 .call-box strong {
 font-size: 16px;
@@ -4505,7 +4508,7 @@ margin-top: 20px;
 .testimonial-active .slick-next {
 	left: -360px;
 }
-.testimonial-active .slick-arrow:hover {background-color: #f9d758; color: #fff;}
+.testimonial-active .slick-arrow:hover {background-color: #f9d758; color: #18232b;}
 .testimonial-avatar.p-relative {
 	min-height: 455px;
 	display: block;
@@ -5401,11 +5404,11 @@ font-family: "Font Awesome 5 Pro";
 .pricing-box.active {
 border-color: #f9d758;
 background: #f9d758;
-color: #fff;
+color: #18232b;
 }
 .pricing-box.active h3,.pricing-box.active h2,.pricing-box.active .pricing-body li::before{
-    color: #fff;
-}
+    color: #18232b;
+} 
 .pricing-box hr{
     background: #d7d7d7;
 margin: auto;
@@ -5446,9 +5449,9 @@ background: #f9d758;
   margin-top: 50px;
     box-shadow: 1px 1.732px 60px 0px rgba(75, 131, 252, 0.3);
 }
-.pricing-box.active strong{
+/* .pricing-box.active strong{
     color: #fff;
-}
+} */
 .pricing-btn {
   width: 100%;
   display: inline-block;
@@ -5462,9 +5465,9 @@ background: #f9d758;
     padding: 30px;
 }
 
-.pricing-box2.active .price-count h2,.pricing-box2.active .pricing-body li,.pricing-box2.active .pricing-body li::before,.pricing-box2.active .pricing-head h3,.pricing-box2.active .pricing-head p {
+/* .pricing-box2.active .price-count h2,.pricing-box2.active .pricing-body li,.pricing-box2.active .pricing-body li::before,.pricing-box2.active .pricing-head h3,.pricing-box2.active .pricing-head p {
   color: #fff;
-}
+} */
 .pricing-box2.active .pricing-head .month {
   background-color: rgba(225, 225, 225, 0.18);
   color: #fff;
@@ -5761,7 +5764,7 @@ color: #fff !important;
 }
 .footer-social a:hover{    
   background: #f9d758;
-    color: #fff !important;
+    color: #18232b !important;
 }
 .f-widget-title h2,.footer-widget .widgettitle  {
 	font-size: 24px;
