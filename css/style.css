@@ -22,9 +22,10 @@
 20. footer
 
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
 
-/* ========1. Theme default css========= */
+/* ========Theme default css========= */
  body {
     font-family: 'Roboto', sans-serif;
 	font-size: 15px;
@@ -184,7 +185,7 @@ label {
 
 
 
-/* ========2. header css========= */
+/* ========header========= */
 .header-area{
     width:100%;
 }
@@ -250,6 +251,9 @@ label {
     font-weight:600;
     text-transform:uppercase;
 }
+.menu-area .sign-btn a:hover{
+    background:#f9c158;
+}
 .menu-area .sign-btn a:first-child{
     background:transparent;
     color:#f9c158;
@@ -258,7 +262,7 @@ label {
 
 
 
-/*======3. banner=========*/
+/*======banner=========*/
 .banner-area{
     padding:20px 0;
     background:#fff;
@@ -266,25 +270,32 @@ label {
 .banner-area .banner-field{
     background-color:rgba(0, 0, 0, 0.8);
     border-radius:40px;
-    padding:200px 30px;
+    padding:140px 30px;
 }
-.banner-area .banner-content{
-    max-width:100%;
-    width:600px;
+.banner-area .banner-content {
+	max-width: 100%;
+	width: 600px;
+	background: linear-gradient(to right, rgba(24,35,43,0.95), rgba(24,35,43,0.75), transparent);
+	padding: 40px;
+	border-radius: 43px;
 }
 .banner-area .banner-content h2 {
-	font-size: 44px;
+	font-size: 36px;
 	color: #fff;
 	font-weight: 800;
-	line-height: 55px;
+	line-height: 42px;
 	margin-bottom: 30px;
+	text-transform: capitalize;
 }
-.banner-area .banner-content h5{
-    font-size:18px;
-    color:#fff;
-    font-weight:600;
-    line-height:28px;
-    margin-bottom:30px;
+.banner-area .banner-content h2 span{
+	color: #f9c158;
+}
+.banner-area .banner-content h5 {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 500;
+	line-height: 28px;
+	margin-bottom: 30px;
 }
 .banner-area .banner-content .start-btn{
     font-size:18px;
@@ -292,7 +303,6 @@ label {
     background:#fff;
     font-weight:600;
     line-height:28px;
-    margin-bottom:30px;
     padding:10px 10px 10px 30px;
     border-radius:60px;
     align-items:center;
@@ -314,27 +324,64 @@ label {
 }
 
 
+/*==========steps=========*/
+.step-area{
+    width:100%;
+    padding:60px 0;
+}
+.step-area .each-step{
+    width:180px;
+    max-width:100%;
+    flex-direction:column;
+    position:relative;
+}
+.step-area .each-step::after {
+	position: absolute;
+	content: "\2192";
+	top: 20px;
+	right: -20%;
+	font-size: 37px;
+    color:#18232b;
+}
+.step-area .each-step:last-child::after {
+	display:none;
+}
+.step-area h2{
+    font-size:35px;
+}
+.step-area span{
+    background:rgba(250,193,88,0.25);
+    border-radius:60px;
+    height:100px;
+    width:120px;
+    border-radius:28px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.step-area h4{
+    font-size: 14px;
+	color: #18232b;
+	font-weight: 500;
+	line-height: 42px;
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
 
 
 
-
-/*==========4. about=========*/
-.about-img {
-	margin-left: -50px;
+/*==========about=========*/
+.about-area .about-img{
+    position:relative;
 }
-.about-user {
-    display: flex;
-    margin: 30px 0;
-    border-bottom: 1px solid #d7d7d7;
-    padding-bottom: 15px;
+.about-area .about-img img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:30px;
 }
-.about-user .img{
-    margin-right: 30px;
-}
-.about-user .text h5{
-    color: #f9d758;
-}
-.about-text {
+.about-tag {
     position: absolute;
     bottom: 0px;
     right: 30px;
@@ -345,7 +392,7 @@ label {
     border-radius: 50%;
     height: 200px;
 }
-.about-text .line2 {
+.about-tag .line2 {
     border: 1px dashed #fff;
     margin: 10px;
     padding: 40px 0 0;
@@ -353,7 +400,7 @@ label {
     height: 180px;
     width: 180px;
 }
-.about-text span {
+.about-tag span {
     font-size:45px;
     color: #fff;
     position: relative;
@@ -361,36 +408,24 @@ label {
     font-weight: 700;
     margin-top: 15px;
 }
-.about-text span sub {
+.about-tag span sub {
     font-size: 30px;
     color: #fff;
     font-weight: 800;
     margin-left: -10px;
     bottom: 5px;
 }
-.about-title > span {
-	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #fff;
-	background: #f9d758;
-	height: 30px;
-	display: inline-block;
-	text-align: center;
-	line-height: 30px;
-	margin-bottom: 30px;
-}
-.about-title h2 {
+.about-text h2 {
 	font-size: 60px;
     margin-bottom: 0 !important;
 }
-.about-title h5{
+.about-text h5{
    color: #f9d758;
     font-size: 22px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-.about-title .title-strong{
+.about-text .title-strong{
     color: #4f4f4f;
     font-weight: 500;
     font-size: 18px;
