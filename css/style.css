@@ -341,7 +341,7 @@ label {
 	top: 20px;
 	right: -20%;
 	font-size: 37px;
-    color:#18232b;
+    color: #18232b;
 }
 .step-area .each-step:last-child::after {
 	display:none;
@@ -364,13 +364,16 @@ label {
 	color: #18232b;
 	font-weight: 500;
 	line-height: 42px;
-	margin-bottom: 30px;
 	text-transform: capitalize;
 }
 
 
 
 /*==========about=========*/
+.about-area{
+    width:100%;
+    padding-bottom:100px;
+}
 .about-area .about-img{
     position:relative;
 }
@@ -379,34 +382,37 @@ label {
     height:400px;
     object-fit:cover;
     object-position:center;
-    border-radius:30px;
+    border-radius:40px;
 }
 .about-tag {
-    position: absolute;
-    bottom: 0px;
-    right: 30px;
-    width: 200px;
-    background: #f9d758;
-    border-radius: 4px;
-    box-shadow: 0px 13px 60px 0px rgba(53, 97, 228, 0.4);
-    border-radius: 50%;
-    height: 200px;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	width: 120px;
+	background: #f9d758;
+	box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 50%;
+	height: 120px;
+	bottom: 0;
+	margin: auto;
 }
 .about-tag .line2 {
-    border: 1px dashed #fff;
-    margin: 10px;
-    padding: 40px 0 0;
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
+	border: 1px dashed #18232b;
+	margin: 10px;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+    display:flex;
+    align-items:center;
 }
 .about-tag span {
-    font-size:45px;
-    color: #fff;
-    position: relative;
-    display: inline-block;
-    font-weight: 700;
-    margin-top: 15px;
+	font-size: 18px;
+	color: #18232b;
+	position: relative;
+	display: block;
+	font-weight: 900;
+	text-align: center;
+	line-height: 20px;
 }
 .about-tag span sub {
     font-size: 30px;
@@ -415,21 +421,43 @@ label {
     margin-left: -10px;
     bottom: 5px;
 }
-.about-text h2 {
-	font-size: 60px;
-    margin-bottom: 0 !important;
+.about-text{
+    width:100%;
+    border-radius:40px;
+    padding:40px;
+    background:linear-gradient(to right, #F9C158, transparent);
 }
-.about-text h5{
-   color: #f9d758;
-    font-size: 22px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-.about-text .title-strong{
-    color: #4f4f4f;
+.about-text p{
+    font-size: 14px;
+    color: #18232b;
     font-weight: 500;
-    font-size: 18px;
 }
+.head-text h5{
+	color: #18232b;
+	font-size: 12px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	padding-left: 50px;
+    position:relative;
+}
+.head-text h5::after{
+	color:#18232b;
+    content:"";
+    position:absolute;
+    width:40px;
+    height:1px;
+    background:#18232b;
+    left:0;
+    top:8px;
+}
+.head-text h2 {
+	font-size: 54px;
+	font-weight: 900;
+	margin-bottom: 15px;
+}
+
 
 
 
