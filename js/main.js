@@ -1,26 +1,5 @@
 (function ($) {
 "use strict";
-
-
-// skill
-$(".skill-per").each(function() {
-  var $this = $(this);
-  var id = $this.attr("id");
-  $this.css("width", id + "%");
-  $({ animatedValue: 0 }).animate(
-    { animatedValue: id },
-    {
-      duration: 1000,
-      step: function() {
-        $this.attr("id", Math.floor(this.animatedValue) + "%");
-      },
-      complete: function() {
-        $this.attr("id", Math.floor(this.animatedValue) + "%");
-      }
-    }
-  );
-});
-    
     
 // sticky
 $(window).on('scroll', function () {
@@ -43,6 +22,14 @@ $(function () {
 		event.preventDefault();
 	});
 });
+
+
+// counterUp
+$('.count').counterUp({
+	delay: 100,
+	time: 1000
+});
+
 
 // scrollToTop
 $.scrollUp({
