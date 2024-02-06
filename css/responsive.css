@@ -1181,9 +1181,6 @@ box-shadow: 0 0 0 0;
 .services-box-02 .services-content2 p {
   margin-bottom: -50px;
 }
-    .menu-area{
-        background: #fff;
-    }
 .video2 {
   top: 0;
 }
@@ -2047,10 +2044,6 @@ border-bottom: none;
 .container-p {
 	padding: 0 15px;
 }
-.menu-area {
-	padding-top: 15px;
-	padding-bottom: 5px;
-}
 .slider-bg .video-i.popup-video {
     display: none;
 }
@@ -2196,10 +2189,6 @@ border-bottom: none;
 }
 .f-cta-area {
 	padding: 35px 20px 0;
-}
-
-.menu-area {
-	padding: 20px 0;
 }
 .responsive {
     float: right;
@@ -2577,4 +2566,5 @@ width: 100%;
     .button-group button {
     margin: 0 2px;
 
+}
 }
