@@ -1251,3 +1251,9 @@ border-radius: 8px;
     border-bottom: 3px solid;
     border-color: #f9c158 !important;
 }
+.about-page{
+    padding-top: 50px;
+}
+.service-page{
+    padding-top: 50px;
+}
