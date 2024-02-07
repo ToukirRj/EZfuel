@@ -370,13 +370,13 @@ label {
 }
 .step-area span{
     background:rgba(250,193,88,0.25);
-    border-radius:60px;
     height:100px;
     width:120px;
     border-radius:28px;
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-bottom:10px;
 }
 .step-area h4{
     font-size: 14px;
@@ -629,6 +629,7 @@ label {
     font-size:15px;
     font-weight:500;
     color:#d9d9d9;
+    width:88%;
 }
 .footer-area .footer-info h2{
     font-size:15px;
@@ -649,13 +650,25 @@ label {
     color:#f9c158;
 }
 .footer-area .copy-text{
-	font-size: 14px;
+	font-size: 12px;
 	color: rgba(255,255,255,0.5);
-	letter-spacing: 0.5px;
+	letter-spacing: 1px;
 	padding-top: 20px;
 	border-top: 1px dashed rgba(255,255,255,0.35);
 	margin-top: 40px;
 }
+.smoth-scroll{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:46px;
+    height:46px;
+    background: #f9c158;
+    padding:7px;
+    border-radius:50%;
+    display:none;
+}
+
 
 
 
