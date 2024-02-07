@@ -11449,7 +11449,7 @@ blockquote cite {
 
 .others-info {
     background: #fff;
-    padding: 20px;
+    
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, .125);
 }
@@ -11499,4 +11499,24 @@ blockquote cite {
 }
 .about-part-body{
     background: #f3f3f9;
+}
+.tab-content{
+    padding: 20px;
+}
+.others-top-nav{
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    padding: 0 20px;
+}
+.others-top-nav button{
+    padding: 15px;
+    border: none;
+    background: transparent;
+    font-size: 24x;
+}
+.others-top-nav .active{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px solid;
+    border-color: #f9c158 !important;
 }
