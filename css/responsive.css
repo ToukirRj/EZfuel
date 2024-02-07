@@ -184,3 +184,84 @@
         width: 30px;
     }
 }
+
+@media only screen and (max-width: 575px) {
+    .banner-area .banner-field {
+        padding: 20px;
+    }
+    .banner-area .banner-content {
+        border-radius: 22px;
+        padding:20px;
+    }
+    .banner-area .banner-content h2 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .banner-area .banner-content h5 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .step-area {
+        padding: 20px 0 20px;
+    }
+    .step-area h2 {
+        font-size: 24px;
+    }
+    .about-text {
+        padding: 25px;
+    }
+    .about-text p {
+        font-weight:400;
+    }
+    .about-area {
+        padding-bottom: 30px;
+    }
+    .service-field {
+        border-radius: 35px;
+        padding: 30px 15px 0px;
+    }
+    .head-text h2 {
+        font-size: 27px;
+    }
+    .services-area {
+        padding: 0 0 30px;
+    }
+    .testimonial-area {
+        padding: 0px 0 30px 0;
+    }
+    .testimonial-area .carousel-indicators {
+        bottom: 10px;
+        margin-right: 30px;
+    }
+    .testimonial-area .single-testimonial {
+        padding: 40px 40px 65px;
+    }
+    .newslater-field .head-text h2 {
+        margin-bottom: 10px !important;
+    }
+    .newslater-area p {
+        font-size: 14px;
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+    .newslater-area {
+        position: relative;
+        padding: 0 0 50px;
+    }
+    .footer-area .footer-info p {
+        font-size: 14px;
+        margin-top: 18px;
+        line-height: 24px;
+        margin-bottom:10px;
+    }
+    .footer-area {
+        padding: 50px 0;
+    }
+    .footer-info.mbf{
+        margin-top:10px;
+        padding-top:20px;
+        border-top:1px solid rgba(0,0,0,0.5);
+    }
+}
+
