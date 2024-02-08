@@ -263,5 +263,21 @@
         padding-top:20px;
         border-top:1px solid rgba(0,0,0,0.5);
     }
+    .contact-area {
+        padding: 35px 0;
+    }
+    .default-form {
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .default-form p {
+        font-size: 14px;
+    }
+    .pricing-area {
+        padding: 30px 0;
+    }
+    .signinup {
+        padding: 50px 0;
+    }
 }
 
