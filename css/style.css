@@ -861,6 +861,10 @@ label {
     padding: 100px 0;
     background: #f2f3f8;
 }
+.signinupup {
+    padding: 50px 0;
+    background: #f2f3f8;
+}
 
 .last-rem a {
     text-decoration: underline;
@@ -925,7 +929,7 @@ label {
 /*==========Profile-Part==========*/
 .profile-part {
     padding: 50px 0;
-    background: #f3f3f9;
+    background: #e9e9e9;
 }
 .profile-info {
 	background: #fff;
@@ -934,11 +938,11 @@ label {
 	border: 5px solid rgba(0, 0, 0, .125);
 }
 .profile-info h2 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #18232b;
-    text-align: center;
-    margin-top: 15px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #18232b;
+	text-align: center;
+	margin-top: 15px;
 }
 .profile-info p {
     font-size: 16px;
@@ -972,26 +976,26 @@ label {
 
 }
 .profile-all-info table tr td {
-    padding: 10px 0;
+    padding: 8px 0;
 }
 .profile-all-info .icon-title {
-    width: 40%;
-    font-size: 14px;
-    font-weight: 600;
-    color: #18232b;
+	width: 30%;
+	font-size: 15px;
+	font-weight: 500;
+	color: #18232b;
 }
 .profile-all-info .icon-title svg {
     margin-right: 10px;
 }
 .profile-all-info .info {
-    width: 60%;
-    color: #878a99;
+	width: 60%;
+	color: #555;
+	font-weight: 400;
 }
 .others-info {
-    background: #fff;
-
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, .125);
+	background: #f2f3f8;
+	border-radius: 15px;
+	border: 2px solid rgba(0, 0, 0, .125);
 }
 .others-info .date {
     margin-right: 20px;
@@ -1040,25 +1044,24 @@ label {
 .about-part-body {
     background: #f3f3f9;
 }
-.tab-content {
-    padding: 20px;
-}
 .others-top-nav {
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
-    padding: 0 20px;
+	padding: 5px 5px 7px;
+	background:rgba(0, 0, 0, .125);
+	border-radius: 13px;
 }
 .others-top-nav button {
-    padding: 15px;
-    border: none;
-    background: transparent;
-    font-size: 24x;
+	padding:10px 20px;
+	border:0;
+	background: transparent;
+	font-size: 16px;
+    font-weight:500;
+    color:#666;
 }
 .others-top-nav .active {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 3px solid;
-    border-color: #f9c158 !important;
+	border: 0;
+	color: #18232b;
+	background: #fff;
+	border-radius: 10px;
 }
 .about-page {
     padding-top: 50px;
