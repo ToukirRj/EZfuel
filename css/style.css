@@ -852,6 +852,18 @@ label {
     background: #fff;
 }
 
+.default-form .form-group select{
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    border: 2px solid #DFE3E7;
+    border-radius: 5px;
+    color: #000;
+    background: #fff;
+    height: 44px;
+    padding:.375rem .75rem;
+}
+
 .default-form .form-group input::placeholder,
 .default-form .form-group textarea::placeholder {
     color: #999;
@@ -880,33 +892,27 @@ label {
     padding: 70px 0;
     background: #f2f3f8;
 }
-
 .pricing-area .head-text p {
     font-size: 16px;
     font-weight: 400;
 }
-
 .pricing-area .default-form {
     margin: 15px 0;
 }
-
 .pricing h5 {
     font-size: 21px;
     font-weight: 600;
     color: rgba(24, 35, 43, 0.65);
 }
-
 .pricing h1 strong {
     font-size: 16px;
     font-weight: 400;
     color: #18232b;
 }
-
 .pricing ul {
     padding: 15px 0;
     margin: 0;
 }
-
 .pricing ul li {
     padding: 5px 0;
     border-bottom: 1px solid rgba(24, 35, 43, 0.15);
@@ -915,13 +921,20 @@ label {
     font-weight: 500;
     letter-spacing: 0.35px;
 }
-
 .pricing ul li:last-child {
     border-bottom: 0;
 }
-
 .default-form.stand {
     background: #F9C158;
+}
+.about-page {
+    padding-top: 50px;
+}
+.service-page {
+    padding-top: 50px;
+}
+.about-part-body {
+    background: #f3f3f9;
 }
 
 
@@ -993,59 +1006,13 @@ label {
 	font-weight: 400;
 }
 .others-info {
-	background: #fff;
-	border-radius: 15px;
-	border: 2px solid rgba(0, 0, 0, .125);
-}
-.others-info .date {
-    margin-right: 20px;
-    text-align: center;
-}
-.others-info .date h2 {
-    color: #878a99;
-    font-size: 18px;
-    font-weight: 400;
-}
-.others-info .date h3 {
-    color: #878a99;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-}
-.others-info .order h4 {
-    font-size: 16px;
-    color: #18232b;
-    font-weight: 500;
-}
-.others-info .order p {
-    font-size: 14px;
-    color: #878a99;
-    font-weight: 400;
-    margin: 0;
-}
-.money-part p {
-    font-size: 16px;
-    color: #d99008;
-    margin: 5px 0;
-}
-.money-part span {
-    font-size: 14px;
-    color: #878a99;
-    margin: 5px 0;
-}
-.info-card {
-	padding: 10px 20px;
-	border: 1px solid rgba(0, 0, 0, .125);
-	border-radius: 5px;
-	background: #fff;
-	margin: 15px 0;
-}
-.about-part-body {
-    background: #f3f3f9;
+	background:#fff;
+	border-radius:15px;
+	border:2px solid #C4CDD3;
 }
 .others-top-nav {
 	padding: 2px 2px 4px;
-	background:rgba(0, 0, 0, .125);
+	background:#C4CDD3;
 	border-radius: 12px;
 }
 .others-top-nav button {
@@ -1054,7 +1021,7 @@ label {
 	background: transparent;
 	font-size: 16px;
     font-weight:500;
-    color:#666;
+    color:#47545E;
 }
 .others-top-nav .active {
 	border: 0;
@@ -1062,13 +1029,270 @@ label {
 	background: #fff;
 	border-radius: 12px;
 }
-.about-page {
-    padding-top: 50px;
+.tab-pane .tab-box {
+	padding: 15px;
+	min-height: 650px;
 }
-.service-page {
-    padding-top: 50px;
+.tab-pane .tab-box table{
+	width:100%;
 }
-.tab-pane .tab-box{
-    padding:15px 30px;
-    min-height:650px;
+.tab-pane .tab-box table thead{
+	width:100%;
+    background:#fff;
+}
+.tab-pane .tab-box table thead tr{
+	border-bottom:2px solid #E9EDF0;
+}
+.tab-pane .tab-box table thead tr th{
+	font-size: 13px;
+    font-weight: 500;
+    color: #7B858C;
+    padding:3px 5px;
+}
+.tab-pane .tab-box table tbody{
+    background:#fff;
+}
+.tab-pane .tab-box table tbody tr{
+	border-bottom:2px solid #E9EDF0;
+}
+.tab-pane .tab-box table tbody tr td{
+	font-size: 13px;
+    font-weight: 500;
+    color:#18232B;
+    margin-bottom:0;
+    padding:10px 5px;
+}
+.tab-pane .tab-box table tbody tr td .delivered{
+	padding:4px 10px;
+    background-color:#0e8327;
+    color:#fff;
+    border-radius:3px;
+}
+.tab-pane .tab-box table tbody tr td .pending{
+	padding:4px 10px;
+    background-color:#e2970a;
+    color:#fff;
+    border-radius:3px;
+}
+.tab-pane .tab-box table tbody tr td .running{
+	padding:4px 10px;
+    background-color:#0e8327;
+    color:#fff;
+    border-radius:3px;
+}
+.tab-pane .tab-box table tbody tr td .expired{
+	padding:4px 10px;
+    background-color:#e2970a;
+    color:#fff;
+    border-radius:3px;
+}
+
+
+/*=========Upload-Profile-Image==========*/
+.modal{
+    z-index:99999999;
+}
+.modal-backdrop {
+	z-index:99999;
+}
+.modal-content{
+	border: 0;
+	border-radius: 0;
+	outline: 0;
+	padding:0px;
+    background:transparent;
+}
+.modal-title{
+	font-size:24px;
+    width:100%;
+}
+.modal-footer{
+    border-top:0;
+    justify-content:center;
+}
+.modal-footer .btn{
+    border:0;
+    height:46px;
+    padding:0 20px;
+}
+.modal-footer .btn-success{
+    background:#18232B;
+}
+.modal-close{
+    position:absolute;
+    right:25px;
+    top:25px;
+    background:transparent;
+    border:1px solid red;
+    color:red;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    opacity:0.6;
+}
+.modal-close:hover{
+    opacity:1;
+}
+.modal-close span {
+	font-size: 30px;
+	line-height: 30px;
+}
+.default-form .circle {
+    width:7rem;
+    height:7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.default-form .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.default-form .upload-button{
+	position: absolute;
+	overflow: hidden;
+	cursor: pointer;
+    width: 100%;
+    height:100%;
+    left:0;
+    top:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+}
+.default-form .upload-button svg{
+	width:48px;
+    fill:#fff;
+}
+.default-form .file-upload {
+    display:none;
+}
+.offcanvas.offcanvas-end{
+	width:auto;
+	max-width: 100%;
+	z-index: 999999999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.offcanvas.offcanvas-end .requestCanvas {
+	width:auto;
+    max-width:100%;
+	padding: 40px;
+	height:auto;
+	overflow-y: auto;
+}
+.offcanvas.offcanvas-end .requestCanvas .default-form{
+	width:500px;
+    max-width:100%;
+    position: relative;
+}
+.offcanvas.offcanvas-end .requestCanvas .btn-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    opacity: 1;
+    color: red;
+    border: 2px solid red;
+    border-radius: 40px;
+    font-size:30px;
+    line-height:24px;
+}
+.requestCanvas .default-form .circle{
+    width: 10rem;
+    height: 7rem;
+    border-radius:10px;
+}
+.requestCanvas .default-form .vehicle-upload {
+    display:none;
+}
+.default-form .form-group time-schedule{
+    font-size:13px;
+    color:red;
+}
+.dropdown-toggle{
+    background-color:transparent !important;
+    border:0;
+    color:#fff !important;
+    font-size:15px;
+    font-weight:500 !important;
+}
+.dropdown-toggle:hover{
+    background-color:transparent !important;
+    color:#fff !important;
+}
+.dropdown-menu li{
+	width: 100%;
+}
+.dropdown-menu li a{
+	display:block;
+    width:100%;
+    color:#18232B !important;
+    font-size:15px;
+    font-weight:500 !important;
+    text-transform:capitalize !important;
+    margin:0 !important;
+    padding:0 !important;
+    box-shadow:none !important;
+    border-bottom:1px solid #d9d9d9;
+    border-radius:0 !important;
+    letter-spacing:0 !important;
+    text-align:end;
+}
+.dropdown-menu li:last-child a{
+    border-bottom:0 !important;
+}
+.page-loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+}
+.loader-3{
+    width :48px;
+    height:48px;
+    border:3px solid #18232B;
+    border-radius:50%;
+    display:inline-block;
+    position:relative;
+    animation:rotation 1s linear infinite;
+}
+.loader-3::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-bottom-color: #ebaa32;
+}
+@-webkit-keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
 }

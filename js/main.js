@@ -1,7 +1,15 @@
+
 (function ($) {
 	"use strict";
 
-	// sticky
+	// Page Loader==========>
+	$(window).on('load', function () {
+		$('.page-loader').fadeOut();
+	});
+
+
+
+	// Sticky Nav==========>
 	$(window).on('scroll', function () {
 		var scroll = $(window).scrollTop();
 		if (scroll < 50) {
@@ -11,7 +19,8 @@
 		}
 	});
 
-	// smoth scroll
+
+	// Smoth scroll ==========>
 	$(function () {
 		$('.smoth-scroll').on('click', function (event) {
 			var $anchor = $(this);
@@ -30,4 +39,28 @@
 		});
 	});
 
+	// Image Upload ==========>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Event listener for profile image upload
+		document.querySelector('.file-upload').addEventListener('change', function () {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				document.querySelector('.profile_pic').src = e.target.result;
+			};
+			reader.readAsDataURL(this.files[0]);
+		});
+	
+		// Event listener for vehicle image upload
+		document.querySelector('.vehicle-upload').addEventListener('change', function () {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				document.querySelector('.vehicle_pic').src = e.target.result;
+			};
+			reader.readAsDataURL(this.files[0]);
+		});
+	});
+	
 })(jQuery);
+
+
+
