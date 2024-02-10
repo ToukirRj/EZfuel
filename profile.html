@@ -39,7 +39,7 @@
                <ul class="navbar-nav">
                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-               <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+               <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
                <li class="nav-item"><a class="nav-link" href="plans.html">Membership Plans</a></li>
                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                </ul>
@@ -117,7 +117,7 @@
                                             <tr>
                                                 <th class="text-center">Vehicle</th>
                                                 <th>Vehicle Name</th>
-                                                <th class="text-center">Type</th>
+                                                <th class="text-center">Vehicle Model</th>
                                                 <th class="text-center">Date & Time</th>
                                                 <th>Delivery Address</th>
                                                 <th class="text-center">Status</th>
@@ -126,16 +126,16 @@
                                         <tbody>
                                             <tr>
                                                 <td class="text-center"><img src="img/banner/banner.png" alt="img" width="60" height="40"/></td>
-                                                <td>Prada-07823</td>
-                                                <td class="text-center">Gasoline</td>
+                                                <td>Prada</td>
+                                                <td class="text-center">07823</td>
                                                 <td class="text-center">6:45pm, 21-01-2024</td>
                                                 <td>Example Address, Floor-2, House-01, <br>Road-01, Example, USA.</td>
                                                 <td class="text-center"><span class="delivered">Delivered</span></td>
                                             </tr>
                                             <tr>
                                                 <td class="text-center"><img src="img/banner/banner.png" alt="img" width="60" height="40"/></td>
-                                                <td>Corolla-45674</td>
-                                                <td class="text-center">Diesel</td>
+                                                <td>Corolla</td>
+                                                <td class="text-center">45674</td>
                                                 <td class="text-center">8:45pm, 10-02-2024</td>
                                                 <td>Example Address, Floor-2, House-01, <br>Road-01, Example, USA.</td>
                                                 <td class="text-center"><span class="pending">Pending</span></td>
@@ -341,10 +341,16 @@
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label>Vehicle Name</label>                                   
-                        <input class="form-control" type="text" id="name" name="name" placeholder="Type full name" required>    
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Type vehicle name" required>    
                     </div>          
                 </div>
                 <div class="col-lg-12">
+                    <div class="form-group">
+                        <label>Vehicle Model No.</label>                                   
+                        <input class="form-control" type="text" id="name" name="name" placeholder="Type model no." required>    
+                    </div>          
+                </div>
+                <!-- <div class="col-lg-12">
                     <div class="form-group">
                         <label>Delivery Type</label>                                   
                         <select class="form-select">
@@ -354,7 +360,7 @@
                             <option>kerosine Delivery</option>
                         </select>
                     </div>          
-                </div>
+                </div> -->
                 <div class="col-lg-12">
                     <div class="form-group">
                         <label>Delivery Date & Time</label> 
@@ -406,7 +412,7 @@
                 <h2>Our Links</h2>
                 <ul>
                    <li><a href="about.html">About Us</a></li>
-                   <li><a href="services.html">Services</a></li>
+                   <li><a href="service.html">Service</a></li>
                    <li><a href="plans.html">Membership Plans</a></li>
                    <li><a href="contact.html"> Contact Us</a></li>
                 </ul>
@@ -445,6 +451,30 @@
  <script src="js/jquery.min.js"></script>
  <script src="js/bootstrap.bundle.min.js"></script>
  <script src="js/main.js"></script>
+
+
+ <script>
+    // Image Upload ==========>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Event listener for profile image upload
+		document.querySelector('.file-upload').addEventListener('change', function () {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				document.querySelector('.profile_pic').src = e.target.result;
+			};
+			reader.readAsDataURL(this.files[0]);
+		});
+	
+		// Event listener for vehicle image upload
+		document.querySelector('.vehicle-upload').addEventListener('change', function () {
+			var reader = new FileReader();
+			reader.onload = function (e) {
+				document.querySelector('.vehicle_pic').src = e.target.result;
+			};
+			reader.readAsDataURL(this.files[0]);
+		});
+	});
+ </script>
 
 </body>
 </html>

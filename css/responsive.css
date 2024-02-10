@@ -98,7 +98,7 @@
     .about-area {
         padding-bottom: 50px;
     }
-    .services-area .head-text p {
+    .service-area .head-text p {
         font-size: 15px;
     }
     .service-box {
@@ -110,7 +110,7 @@
     .service-box p {
         font-weight: 400;
     }
-    .services-area {
+    .service-area {
         padding: 0 0 50px;
     }
     .about-text {
@@ -146,6 +146,9 @@
     .newslater-area p {
         font-size: 16px;
         padding: 0 20px;
+    } 
+    .profile-info {
+        margin-bottom:20px;
     }
 }
 
@@ -183,6 +186,29 @@
         height: 30px;
         width: 30px;
     }
+    .profile-part {
+        padding: 30px 0;
+        background: #f2f3f8;
+    }
+    .tab-pane .tab-box table thead {
+        display: none;
+    }
+    .tab-pane .tab-box table tbody tr {
+        border: 1px solid #dfdfdf;
+        display: grid;
+        border-radius:10px;
+        margin-bottom:10px;
+        padding:10px;
+    }
+    .tab-pane .tab-box table tbody tr td {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 3px 5px;
+        display: flex;
+    }
+    .tab-pane .tab-box {
+        min-height: auto;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -217,14 +243,23 @@
     .about-area {
         padding-bottom: 30px;
     }
+    .about-page {
+        padding-top: 30px;
+    }
+    .service-area.service-page {
+        padding: 30px 0;
+    }
     .service-field {
         border-radius: 35px;
-        padding: 30px 15px 0px;
+        padding: 30px 15px 1px;
+    }
+    .newslater-field {
+        padding: 40px 15px;
     }
     .head-text h2 {
         font-size: 27px;
     }
-    .services-area {
+    .service-area {
         padding: 0 0 30px;
     }
     .testimonial-area {
@@ -278,6 +313,20 @@
     }
     .signinup {
         padding: 50px 0;
+    }
+    .profile-part {
+        padding: 30px 0;
+    }
+    .others-top-nav button {
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .offcanvas.offcanvas-end .requestCanvas {
+        padding: 5px;
+    }
+    .profile-info {
+        padding: 10px 10px;
+        border-radius: 20px;
     }
 }
 

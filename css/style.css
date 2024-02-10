@@ -5,7 +5,7 @@
 3. banner
 4. about
 5. features
-6. services
+6. service
 7. video
 8. choose
 9. brand
@@ -572,8 +572,8 @@ label {
 
 
 
-/*==========services=======*/
-.services-area {
+/*==========service=======*/
+.service-area {
     width: 100%;
     padding: 0 0 100px;
 }
@@ -585,11 +585,11 @@ label {
     padding: 50px;
 }
 
-.services-area .head-text h5::after {
+.service-area .head-text h5::after {
     display: none;
 }
 
-.services-area .head-text p {
+.service-area .head-text p {
     font-size: 16px;
     font-weight: 400;
 }
@@ -941,7 +941,7 @@ label {
     padding-top: 50px;
 }
 .service-page {
-    padding-top: 50px;
+	padding: 50px 0;
 }
 .about-part-body {
     background: #f3f3f9;

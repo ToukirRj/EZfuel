@@ -38,27 +38,6 @@
 			}
 		});
 	});
-
-	// Image Upload ==========>
-	document.addEventListener("DOMContentLoaded", function() {
-		// Event listener for profile image upload
-		document.querySelector('.file-upload').addEventListener('change', function () {
-			var reader = new FileReader();
-			reader.onload = function (e) {
-				document.querySelector('.profile_pic').src = e.target.result;
-			};
-			reader.readAsDataURL(this.files[0]);
-		});
-	
-		// Event listener for vehicle image upload
-		document.querySelector('.vehicle-upload').addEventListener('change', function () {
-			var reader = new FileReader();
-			reader.onload = function (e) {
-				document.querySelector('.vehicle_pic').src = e.target.result;
-			};
-			reader.readAsDataURL(this.files[0]);
-		});
-	});
 	
 })(jQuery);
 
